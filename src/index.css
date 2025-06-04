@@ -4,89 +4,86 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0PERCENT 100PERCENT;
+    --foreground: 222.2 84PERCENT 4.9PERCENT;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0PERCENT 100PERCENT;
+    --card-foreground: 222.2 84PERCENT 4.9PERCENT;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0PERCENT 100PERCENT;
+    --popover-foreground: 222.2 84PERCENT 4.9PERCENT;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 221 71PERCENT 51PERCENT; /* Updated: Professional Blue e.g., #1D4ED8 */
+    --primary-foreground: 210 40PERCENT 98PERCENT; /* White for contrast */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40PERCENT 96.1PERCENT;
+    --secondary-foreground: 222.2 47.4PERCENT 11.2PERCENT;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40PERCENT 96.1PERCENT;
+    --muted-foreground: 215.4 16.3PERCENT 46.9PERCENT;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 158 91PERCENT 27PERCENT; /* Updated: Contrasting Green e.g., #047857 */
+    --accent-foreground: 210 40PERCENT 98PERCENT; /* White for contrast */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2PERCENT 60.2PERCENT;
+    --destructive-foreground: 210 40PERCENT 98PERCENT;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 214.3 31.8PERCENT 91.4PERCENT;
+    --input: 214.3 31.8PERCENT 91.4PERCENT;
+    --ring: 158 91PERCENT 27PERCENT; /* Updated: Accent color for focus ring */
 
-    --radius: 0.5rem;
+    --radius: 0.5rem; /* 8px, fits "4-8px" range */
 
-    --sidebar-background: 0 0% 98%;
+    --sidebar-background: 0 0PERCENT 98PERCENT;
+    --sidebar-foreground: 240 5.3PERCENT 26.1PERCENT;
+    --sidebar-primary: 240 5.9PERCENT 10PERCENT;
+    --sidebar-primary-foreground: 0 0PERCENT 98PERCENT;
+    --sidebar-accent: 240 4.8PERCENT 95.9PERCENT;
+    --sidebar-accent-foreground: 240 5.9PERCENT 10PERCENT;
+    --sidebar-border: 220 13PERCENT 91PERCENT;
+    --sidebar-ring: 217.2 91.2PERCENT 59.8PERCENT;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Typography */
+    --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 222.2 84PERCENT 4.9PERCENT;
+    --foreground: 210 40PERCENT 98PERCENT;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 222.2 84PERCENT 4.9PERCENT;
+    --card-foreground: 210 40PERCENT 98PERCENT;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 222.2 84PERCENT 4.9PERCENT;
+    --popover-foreground: 210 40PERCENT 98PERCENT;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 217 91PERCENT 60PERCENT; /* Updated: Lighter Blue for dark mode e.g., #3B82F6 */
+    --primary-foreground: 215 28PERCENT 17PERCENT; /* Darker foreground for contrast e.g., slate-800 */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 217.2 32.6PERCENT 17.5PERCENT;
+    --secondary-foreground: 210 40PERCENT 98PERCENT;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 217.2 32.6PERCENT 17.5PERCENT;
+    --muted-foreground: 215 20.2PERCENT 65.1PERCENT;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 152 63PERCENT 51PERCENT; /* Updated: Lighter Green for dark mode e.g., #34D399 */
+    --accent-foreground: 159 81PERCENT 19PERCENT; /* Darker foreground for contrast e.g., green-900 */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 62.8PERCENT 30.6PERCENT;
+    --destructive-foreground: 210 40PERCENT 98PERCENT;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 217.2 32.6PERCENT 17.5PERCENT;
+    --input: 217.2 32.6PERCENT 17.5PERCENT;
+    --ring: 152 63PERCENT 51PERCENT; /* Updated: Accent color for focus ring in dark mode */
+
+    --sidebar-background: 240 5.9PERCENT 10PERCENT;
+    --sidebar-foreground: 240 4.8PERCENT 95.9PERCENT;
+    --sidebar-primary: 224.3 76.3PERCENT 48PERCENT;
+    --sidebar-primary-foreground: 0 0PERCENT 100PERCENT;
+    --sidebar-accent: 240 3.7PERCENT 15.9PERCENT;
+    --sidebar-accent-foreground: 240 4.8PERCENT 95.9PERCENT;
+    --sidebar-border: 240 3.7PERCENT 15.9PERCENT;
+    --sidebar-ring: 217.2 91.2PERCENT 59.8PERCENT;
   }
 }
 
@@ -97,5 +94,6 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans); /* Apply the font family to the body */
   }
 }
